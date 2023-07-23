@@ -35,7 +35,7 @@ jobs:
           git commit -a -m "Add ${{ github.event.issue.title }}" to list"
      
       - name: Push changes
-        uses: hortinstein/cinemancer@master
+        uses: hortinstein/cinemancer@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
