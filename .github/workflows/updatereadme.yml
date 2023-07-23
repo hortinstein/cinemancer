@@ -29,8 +29,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: | 
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "alex"
+          git config --local user.name "alex
           git commit -a -m "Add ${{ github.event.issue.title }}" to list"
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
