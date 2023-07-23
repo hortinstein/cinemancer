@@ -28,10 +28,14 @@ jobs:
           ls
           echo "Issue body: ${{ github.event.issue.body }}"
       # Runs a single command using the runners shell
-      - name: Commits and pushes the updated readme
+      - name: Commits the updated readme
         run: | 
           git config --local user.email "alex"
           git config --local user.name "alex
           git commit -a -m "Add ${{ github.event.issue.title }}" to list"
-          git push origin
      
+      - name: Push changes
+        uses: hortinstein/cinemancer@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
