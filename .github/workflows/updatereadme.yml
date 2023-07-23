@@ -34,5 +34,6 @@ jobs:
         run: | 
           git config user.email "hortinstein@gmail.com"
           git config user.name "hortinstein"
+          git remote set-url --push origin https://hortinstein:$GITHUB_TOKEN@github.com/hortinstein/cinemancer
           git commit -a -m "Add ${{ github.event.issue.title }} to list"
           git push 
