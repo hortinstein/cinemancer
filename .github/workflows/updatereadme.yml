@@ -28,13 +28,10 @@ jobs:
           ls
           echo "Issue body: ${{ github.event.issue.body }}"
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Commits and pushes the updated readme
         run: | 
           git config --local user.email "alex"
           git config --local user.name "alex
           git commit -a -m "Add ${{ github.event.issue.title }}" to list"
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          git push origin
+     
