@@ -1,0 +1,27 @@
+{
+  "name": "cinemancer",
+  "version": "0.0.1",
+  "description": " keeps track of movies and shows and where to stream them",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hortinstein/cinemancer.git"
+  },
+  "keywords": [
+    "reedgood"
+  ],
+  "author": "hortinstein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hortinstein/cinemancer/issues"
+  },
+  "homepage": "https://github.com/hortinstein/cinemancer#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1"
+  }
+}
