@@ -23,7 +23,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
         with:
-          github_token: ${{ secrets.PAT }}
+          github_token: ${{ secrets.GITHUB_TOKEN  }}
       - name: Prints the issue out
         run: |
           echo "Issue title: ${{ github.event.issue.title }}" >> README.md 
